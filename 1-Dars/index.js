@@ -19,3 +19,4 @@
 
 //JSX ixtiyoriy va React-dan foydalanish shart emas. JSX kompilyatsiya bosqichida ishlab chiqarilgan xom JavaScript kodini ko'rish uchun Babel REPL ni sinab ko'ring.
 // Babel is a JavaScript compiler.
+//
