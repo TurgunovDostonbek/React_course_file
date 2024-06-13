@@ -1,6 +1,6 @@
-// Reactga kirish. React CDN linklari.
+// JSX & Template. CDN Componentlar.
 
-
+// React - bu foydalanuvchi interfeyslarini (UI) ko'rsatish uchun JavaScript kutubxonasi. UI tugmalar, matn va tasvirlar kabi kichik birliklardan qurilgan. React ularni qayta foydalanish mumkin bo'lgan, ichki o'rnatish mumkin bo'lgan komponentlarga birlashtirish imkonini beradi. Veb-saytlardan tortib telefon ilovalarigacha ekrandagi hamma narsani komponentlarga bo'lish mumkin.
 
 
 //Yuqoridagi versiyalar faqat ishlab chiqish uchun mo'ljallangan va ishlab chiqarish uchun mos emas.
