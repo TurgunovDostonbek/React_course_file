@@ -1,23 +1,20 @@
-
 import './App.css';
 
 function App() {
+
+  let name = "Dostonbek"
+
+const handeleClick = () => {
+  name = "BibiSora"
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="'../public/logo.svg"className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+          My name is {name}
+      </h1>
+
+      <button onClick = {handeleClick}> Change name</button>
     </div>
   );
 }
