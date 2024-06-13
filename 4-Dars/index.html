@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+</body>
+    <script type="text/babel" >
+
+        const App = () => {
+            //function
+            //template
+            const title = "Welcome to my Raect App"
+            let ism = "Dostonbek"
+            let familiya = "Turgunov"
+            const handelClick = () => {
+                console.log("salom" , title)
+            }
+            return (
+                <div>
+                    <h1> Hello CDN</h1>
+                    <h2>{ism.toUpperCase()}</h2>
+                    <h3>{familiya}</h3>
+                    <p>{title}</p>
+                    <h4>hello {new Date().toDateString()}</h4>
+                    <p>Random Number {Math.floor(Math.random() * 100)}</p>
+
+
+
+                    <button onClick = {handelClick}>Click me</button>
+
+
+                    <button onClick = {() => {
+                        console.log("Arrow functions")
+                    } }> Hi Me</button>
+
+                    
+                </div>
+            )
+        }
+        const root = ReactDOM.createRoot(document.getElementById("root"))
+        root.render(<App/>)
+
+    </script>
+
+</html>
