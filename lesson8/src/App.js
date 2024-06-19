@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from "react"
 
 function App() {
+  let [name, setName] = useState("Dostonbek")
+  const [events, setEvents] = useState([
+    {title: "Dostonbek hello", id: 1 },
+    {title: "Bibisora hello", id: 2 },
+    {title: "Mohinabonu hello", id: 3 }
+  ])
+ 
+
+const handeleClick = () => {
+  setName("Bibisora")
+}
+
+const handeleDelete = (id) => {
+  // 1 - usul
+  ///////////////////////////
+  // const eventDelet = events.filter((event) =>{
+  //   return event.id !== id
+  // })
+  // setEvents(eventDelet)
+  
+// 2 - usul 
+///////////////////////////////
+
+  setEvents((prev) => {
+    return prev.filter((event) => {
+      return event.id !== id
+    })
+  })
+}
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <h1> My name is {name}</h1>
+      <button onClick = {handeleClick}> Change name</button>
+
+      {events.map((item) => {
+        return (
+          <div key={item.id} > 
+            <h1>  {item.title}</h1>
+            <button onClick={() =>  handeleDelete(item.id)}> Delete Me </button>
+          </div>
+        )
+      })}
     </div>
   );
 }
