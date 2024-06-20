@@ -1,0 +1,13 @@
+.modal{
+    background-color: rgb(199, 159, 159);
+    border-radius: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.modal-backdrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
