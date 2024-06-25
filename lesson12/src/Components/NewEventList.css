@@ -1,0 +1,29 @@
+.new_event{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 50px;
+    border: 2px solid black;
+    width: 30%;
+    padding: 50px;
+}
+
+form > label{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+}
+form > label> input{
+    font-size: 20px;
+}
