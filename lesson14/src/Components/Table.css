@@ -1,0 +1,32 @@
+.table{
+    padding-bottom: 30px;
+}
+.table  tr  th {
+    border: 0.2px solid rgb(160, 153, 153);
+    padding: 15px 45px;
+}
+
+#th_btn{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#th_btn .th_btn_first{
+    margin: 5px;
+    background-color: blue;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+#th_btn .th_btn_second{
+    margin: 5px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    color: #FFF;
+    padding: 6px 12px;
+    cursor: pointer;
+}

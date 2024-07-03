@@ -1,0 +1,11 @@
+.add_user{
+    padding: 50px 0;
+}
+.add_user > button{
+    background-color: blue;
+    color: #FFF;
+    border-radius: 4px;
+    padding: 12px 16px;
+    border: none;
+    cursor: pointer;
+}
