@@ -11,13 +11,8 @@ function Trips() {
 
     const {data:trips} = useFetch(url)
 
-
-  
-
-
-
+    
     ///// useCallback hook ni => ishlatilishi....
-
     // const fetchTrips = useCallback(async () =>  {
     //   const req = await fetch(url)
     //   const data = await req.json();
