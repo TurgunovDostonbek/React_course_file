@@ -1,0 +1,12 @@
+.trips{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trip-list{
+    text-align: center;
+    border: 2px solid red;
+    padding: 5px;
+    box-shadow: 0 5px 10px black;
+}
