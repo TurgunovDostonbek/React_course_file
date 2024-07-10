@@ -2,42 +2,21 @@
 import "./Trips.css"
 import { useState } from "react";
 import { useFetch } from "../hooks/useFetch";
-// useCallback = functionlarni hotiraga saqlaydi.. (Manzilarini)
 
 function Trips() {
-    // const [trips, setTrips] = useState([])
     const [url, setUrl] = useState("http://localhost:3000/trips")
+    const {data:trips, isPending, error} = useFetch(url)
     // console.log(trips);
-
-    const {data:trips} = useFetch(url)
-
-
-  
-
-
-
-    ///// useCallback hook ni => ishlatilishi....
-
-    // const fetchTrips = useCallback(async () =>  {
-    //   const req = await fetch(url)
-    //   const data = await req.json();
-    //   setTrips(data);
-    // },[url]) 
-
-    // useEffect(() => {
-    //   fetchTrips()
-    // //   fetch(url)
-    // // .then((req) => req.json())
-    // // .then((data) => setTrips(data))
-    // } ,[fetchTrips])
-    
 
   return (
     <div className="trips">
+      <h1>Trip_List</h1>
+      {isPending && <h4>Loading.....</h4>}
+      {error && <h4>{error} </h4>}
         {trips && trips.map((item) => {
           return (
             <div key={item.id} className="trip-list">
-            <h1>{item.title}</h1>
+            <h2>{item.title}</h2>
             <p>{item.price}</p>
           </div>
           )
